@@ -53,7 +53,7 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     background-color: rgb(25, 25, 30);
-    margin: 0px;
+    margin-top: 20px;
     border-style: solid;
     cursor: pointer;
     border-color: white;
@@ -91,6 +91,12 @@ a {
 .tickets-button a:visited {
     text-decoration: none;
     color: white;
+}
+
+.flyer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .flyer {
