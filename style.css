@@ -11,10 +11,9 @@ h1 {
     justify-content: center;
 }
 
-.content {
+.main {
     display: flex;
-    flex-direction: right;
-    margin-top: 25px;
+    flex-direction: row;
 }
 
 .description {
@@ -25,7 +24,12 @@ h1 {
     margin-right: 55px;
 }
 
-.description-title h1{
+.header {
+    display: flex;
+    width: 500px;
+}
+
+.header h1{
     font-size: 72px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.25em;
@@ -43,6 +47,10 @@ h1 {
 
 a {
     color: white;
+}
+
+#tickets-button-mobile {
+    display: none;
 }
 
 .tickets-button {
@@ -100,7 +108,7 @@ a {
 }
 
 .flyer {
-    margin-top: 120px;
+    margin-top: 23px;
 }
 
 .flyer-img {
@@ -111,13 +119,23 @@ a {
 @media (max-width: 800px) {
     .container {
         align-content: center;
+        justify-content: initial;
     }
-    .content {
+    .header {
+        margin: auto;
+        width: 89%;
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+    .main {
         flex-direction: column;
         flex-flow: column-reverse;
+        align-items: center;
         margin-bottom: 50px;
     }
     .flyer {
+        width: 89%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -127,5 +145,11 @@ a {
     .description {
         width: 90%;
         margin: 0;
+    }
+    #tickets-button {
+        display: none;
+    }
+    #tickets-button-mobile {
+        display: initial;
     }
 }
