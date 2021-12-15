@@ -146,6 +146,10 @@ a {
         width: 90%;
         margin: 0;
     }
+    .description-text {
+        width: -moz-fit-content;
+        width: fit-content;
+    }
     #tickets-button {
         display: none;
     }
