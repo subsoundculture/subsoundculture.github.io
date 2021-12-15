@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(25, 25, 30);
+}
+
+h1 {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: right;
+    margin-top: 25px;
+}
+
+.description {
+    display: flex;
+    width: 460px;
+    flex-direction: column;
+    word-wrap: normal;
+    margin-right: 55px;
+}
+
+.description-title h1{
+    font-size: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.25em;
+    margin: 0;
+}
+
+.description-text {
+    width: 460px;
+    line-height: 1.875em;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    word-wrap: break-word;
+}
+
+a {
+    color: white;
+}
+
+.tickets-button {
+    width: fit-content;
+    margin-top: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(25, 25, 30);
+    margin: 0px;
+    border-style: solid;
+    cursor: pointer;
+    border-color: white;
+    border-width: 2px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+
+    /*background-image: linear-gradient(to top, #ffffff 0%, transparent 0%);*/
+    background-color: rgb(25, 25, 30);
+    -webkit-transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+    -moz-transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+    -ms-transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+    -o-transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+    transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+}
+
+.tickets-button:hover {
+    /*background-image: linear-gradient(to top, #ffffff 100%, transparent 50%);*/
+    background-color: white;
+    border-color: black;
+    color: black;
+    background-position: 0 100%;
+    -webkit-transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+    -moz-transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+    -ms-transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+    -o-transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+    transition: background-color 300ms, color 300ms ease, border-color 300ms ease;
+}
+
+.tickets-button a:link {
+    text-decoration: none;
+    color: white;
+}
+.tickets-button a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.flyer {
+    margin-top: 120px;
+}
+
+.flyer-img {
+    width: 460px;
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        align-content: center;
+    }
+    .content {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        margin-bottom: 50px;
+    }
+    .flyer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .flyer-img {
+        width: 90%;
+    }
+    .description {
+        width: 90%;
+        margin: 0;
+    }
+}
